@@ -1,5 +1,5 @@
 # Read Me
-This is a simple code that would involves solving of two different problems based on the methods as shown below.
+This is a simple code that would involves solving of two different problems based on the methods as shown below. This is a simple problem solving.
 
 ## SortArrayWithSmallestInMiddle
 **Problem:** Given an array of list, sort it in such a way that the highest number is at the top, the second highest at the bottom, third highest is at the second position, fourth highest at second last position and so on. This makes the smallest number come in the middle.

@@ -8,14 +8,14 @@ namespace SortApp
     {
         static void Main(string[] args)
         {
-            var array = new int[] { 9, 3, 2, 7, 5, 12, 12, 6, 4, 1,17, 17, 31 };
+            var array = new int[] { 9, 3, 2, 7, 5, 12, 12, 6, 4, 1, 17, 17, 31 };
             Console.WriteLine("Starting Array:");
 
             array.ToList().ForEach(x =>
             {
                 Console.Write(x + ",");
             });
-            
+
             var sortedArray = SortArrayWithSmallestInMiddle(array);
 
             Console.Write("\r\n\r\n");
@@ -29,7 +29,7 @@ namespace SortApp
             FindDuplicate(array);
             Console.Write("\r\n\r\n");
             Console.Write("Press Enter Key to exit.");
-            
+
             Console.ReadLine();
         }
 
@@ -79,8 +79,7 @@ namespace SortApp
 
             Console.WriteLine($"The number of duplicates are {dictionary.Count(x=>x.Value>1)}");
             Console.WriteLine($"The duplicate numbers are:");
-            dictionary.Where(x => x.Value > 1).ToList()
-                .ForEach(x => Console.Write($"{x.Key},"));
+            Console.WriteLine(string.Join(", ", dictionary.Where(x => x.Value > 1).Select(x=>x.Key)));
         }
     }
 }

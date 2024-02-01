@@ -29,7 +29,6 @@ namespace SortApp
             FindDuplicate(array);
             Console.Write("\r\n\r\n");
             Something();
-            Console.Write("\r\n\r\n");
             Console.Write("Press Enter Key to exit.");
 
             Console.ReadLine();
@@ -87,6 +86,7 @@ namespace SortApp
         public static void Something()
         {
             Console.WriteLine("Something");
+            Console.Write("\r\n\r\n");
         }
     }
 }

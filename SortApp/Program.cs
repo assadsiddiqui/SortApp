@@ -28,6 +28,8 @@ namespace SortApp
             Console.Write("\r\n\r\n");
             FindDuplicate(array);
             Console.Write("\r\n\r\n");
+            Something();
+            Console.Write("\r\n\r\n");
             Console.Write("Press Enter Key to exit.");
 
             Console.ReadLine();
@@ -82,7 +84,7 @@ namespace SortApp
             Console.WriteLine(string.Join(", ", dictionary.Where(x => x.Value > 1).Select(x=>x.Key)));
         }
 
-        public static void something()
+        public static void Something()
         {
             Console.WriteLine("Something");
         }

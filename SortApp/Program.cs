@@ -81,5 +81,7 @@ namespace SortApp
             Console.WriteLine($"The duplicate numbers are:");
             Console.WriteLine(string.Join(", ", dictionary.Where(x => x.Value > 1).Select(x=>x.Key)));
         }
+
+        public static void something() { }
     }
 }
